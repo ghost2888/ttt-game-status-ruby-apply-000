@@ -34,5 +34,6 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? {|full| full == true} 
+  board.all? {|full| full == true || full != true} 
+    return false
 end
