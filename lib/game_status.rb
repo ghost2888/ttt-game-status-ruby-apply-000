@@ -34,5 +34,5 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? {|full| full == object}
+  board.all? {|full| full == "X" || "O"}
 end
