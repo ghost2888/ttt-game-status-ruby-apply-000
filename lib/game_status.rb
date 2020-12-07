@@ -36,5 +36,4 @@ end
 def full?(board)
   board.all? {|full| full != true} 
     return false
-  end
 end
