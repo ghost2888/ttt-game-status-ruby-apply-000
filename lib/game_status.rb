@@ -34,9 +34,5 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |full| 
-    if full == true 
-      true 
-    end
-  end
+  board.all? {|full| full.contains
 end
