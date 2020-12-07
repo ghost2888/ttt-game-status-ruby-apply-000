@@ -56,7 +56,5 @@ def winner(board)
   "X"
   elsif won?(board) != false && board.all? {|o| o == "O"}
   "O"
-  else
-    nil
   end
 end
