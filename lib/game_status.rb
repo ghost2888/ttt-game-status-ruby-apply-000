@@ -38,7 +38,7 @@ def full?(board)
 end
 
 def draw?(board)
-  if board.include?(WIN_COMBINATIONS) 
+  if won?(board).include?(WIN_COMBINATIONS)
     false
   elsif full?(board) == false 
     false
