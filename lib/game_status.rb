@@ -52,5 +52,13 @@ def over?(board)
 end
 
 def winner(board)
-  
+  winning_array = [ ]
+  winning_array = won?(board)
+  if winning_array.include?("X")
+    "X"
+  elsif winning_array.include?("O")
+    "O"
+  else
+    nil
+  end
 end
