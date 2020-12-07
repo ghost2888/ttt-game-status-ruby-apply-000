@@ -35,7 +35,7 @@ end
 
 def full?(board)
   position_taken.all? {|full| full == "X" || "O"}
-  if full != "X" || "O"
+  
       false
   end
 end
