@@ -37,7 +37,7 @@ def full?(board)
  board.all? {|full| full == "X"||"O" && full != " "}
 end
 
-def draw(board)
+def draw?(board)
   if won?(board) == true && full?(board) == false 
     false
   else
