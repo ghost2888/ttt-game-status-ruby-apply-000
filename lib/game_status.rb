@@ -38,9 +38,11 @@ def full?(board)
 end
 
 def draw?(board)
-  if board.include?(WIN_COMBINATIONS) == true || full?(board) == false 
+  if board.include?(WIN_COMBINATIONS) 
+    false
+  elsif full?(board) == false 
     false
   else
-    true
+    true 
   end
 end
