@@ -54,9 +54,9 @@ end
 def winner(board)
   index = [ ]
   index = won?(board)
-  if [index[0]] == "X"
+  if board[index[0]] == "X"
     "X"
-  elsif [index[0]] == "O"
+  elsif board[index[0]] == "O"
     "O"
   else
     nil
