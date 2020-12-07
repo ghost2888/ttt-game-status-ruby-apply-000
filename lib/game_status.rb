@@ -53,9 +53,4 @@ end
 
 def winner(board)
   won?(board) != false
-  if board.all? {|x| x =="X"}
-  "X"
-  else board.all? {|o| o == "O"}
-  "O"
-  end
 end
