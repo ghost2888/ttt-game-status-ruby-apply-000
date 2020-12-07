@@ -52,5 +52,11 @@ def over?(board)
 end
 
 def winner(board)
- 
+  if won?(board) != false && WIN_COMBINATIONS.all? {|win| win == "X"}
+    "X"
+  elsif won?(board) != false WIN_COMBINATIONS.all? {|win| win == "O"}
+    "O"
+  else 
+    nil
+  end
 end
