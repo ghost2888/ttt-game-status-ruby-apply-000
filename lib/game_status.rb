@@ -34,9 +34,5 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? {|full| if full == "X" || "O" 
-  else 
-    true
-  end
-  }
+  position_taken.all? {|full| if full == "X" || "O" }
 end
