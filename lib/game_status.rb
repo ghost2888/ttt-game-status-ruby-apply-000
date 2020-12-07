@@ -52,9 +52,5 @@ def over?(board)
 end
 
 def winner(board)
-  if position_1 == "X" && position_2 == "X" && position_3 == "X"
-    "X"
-  elseif if position_1 == "O" && position_2 == "O" && position_3 == "O"
-    "O"
-  end
+  if won?(board) == true && won
 end
