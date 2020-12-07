@@ -52,7 +52,7 @@ def over?(board)
 end
 
 def winner(board)
-  winning_array = [ ]
+  winning_array = []
   winning_array = won?(board)
   if [winning_array[0]] == "X"
     "X"
