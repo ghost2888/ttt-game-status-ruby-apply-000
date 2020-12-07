@@ -34,4 +34,5 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? {|full| full
+  board.all? {|full| full}
+end
