@@ -52,9 +52,6 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board) == false 
-    nil
-  elsif won?(board) != false 
-  end
-  
+  won?(board) != false && board.include?("X", "X", "X") == true
+  "X"
 end
